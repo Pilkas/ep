@@ -1,0 +1,55 @@
+<template>
+  <div>
+    <div class="section">
+      <div class="container">
+        <div class="columns">
+          <aside class="column is-3">
+            <div class="logo has-text-centered is-inline-block-touch">
+              <nuxt-link to="/" exact><img src="~/static/m-logo.png"></nuxt-link>
+              <div class="slogan is-hidden-touch">Praktiškas verslo planavimas</div>
+            </div>
+
+            <div class="navbar-burger burger is-pulled-right" v-on:click="toggleMenu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <hr class="is-hidden-touch">
+            <sidebarMenu v-bind:class="{ 'is-hidden-touch' : isSideMenuHidden }" v-on:click.native="toggleMenu"/>
+          </aside>
+          <main class="column is-9">
+            <div class="columns is-centered">
+              <div class="column is-10 meh">
+                <nuxt/>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+    <defaultFooter/>
+  </div>
+</template>
+
+<script>
+import sidebarMenu from '~/components/sidebar-menu.vue'
+import defaultFooter from '~/components/default-footer.vue'
+
+export default {
+  data () {
+    return {
+      isSideMenuHidden: false
+    }
+  },
+  methods: {
+    toggleMenu: function () { this.isSideMenuHidden = !this.isSideMenuHidden }
+  },
+  components: {
+    sidebarMenu,
+    defaultFooter
+  }
+}
+</script>
+<style>
+
+</style>
