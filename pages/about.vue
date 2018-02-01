@@ -11,6 +11,7 @@
 // export default {
 //   layout: 'default'
 // }
+
 export default {
   data () {
     return {
@@ -28,10 +29,6 @@ export default {
   // layout: 'default'
 }
 </script>
-
-
-
-
 
 <style>
 

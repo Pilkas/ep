@@ -1,7 +1,12 @@
+const axios = require('axios')
+
 module.exports = {
   /*
   ** Headers of the page
   */
+  router: {
+    base: '/a/'
+  },
   head: {
     title: 'ep',
     meta: [
@@ -10,17 +15,45 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'EP site' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href:'css/bulma.min.css' },
-      { rel: 'stylesheet', href:'css/font-awesome.min.css' },
-      { rel: 'stylesheet', href:'css/custom.css' }
-
+      { rel: 'icon', type: 'image/x-icon', href: '/a/favicon.ico' },
+      { rel: 'stylesheet', href:'/a/css/bulma.min.css' },
+      { rel: 'stylesheet', href:'/a/css/font-awesome.min.css' },
+      { rel: 'stylesheet', href:'/a/css/custom.css' }
     ]
   },
+  // css: [
+  //   '@/static/css/custom.css',
+  //   '@/static/css/bulma.min.css'
+  // ],
   /*
   ** Customize the progress bar color
   */
-  loading: false,
+  loading: {
+    color: 'blue',
+    height: '5px'
+  },
+  transition: {
+    name: 'page',
+    mode: 'out-in',
+    beforeEnter (el) {
+      console.log('Before enter...');
+    }
+  },
+  env: {
+    cockpit: {
+      apiUrl: 'http://appetite.ahost.lt/cockpitCMS/api',
+      apiToken: '42a4ea47475e32209cff82187a050b',
+      baseUrl: 'http://appetite.ahost.lt/cockpitCMS'
+    }
+  },
+  generate: {
+    routes: function () {
+      return axios.get('http://appetite.ahost.lt/cockpitCMS/api/collections/get/page?token=42a4ea47475e32209cff82187a050b')
+      .then((res) => {
+        return res.data.entries.map((page) => {return page.URL})
+      })
+    }
+  },
   /*
   ** Build configuration
   */

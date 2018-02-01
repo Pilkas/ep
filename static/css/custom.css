@@ -47,7 +47,7 @@ aside .menu-list a:hover {
 }
 aside .menu-list a.is-active {
   background: none;
-  background: url(/menu-right.png) no-repeat left center;
+  background: url(../menu-right.png) no-repeat left center;
   padding-left: 24px;
   /*margin-left: -12px;*/
   /*color: #9e9885;*/
