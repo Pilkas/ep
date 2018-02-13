@@ -3,6 +3,17 @@
     <h1>Kontaktai</h1>
 
     <Notification :notification-data="notificationData"/>
+    <p>
+      <strong>Tomas Birkantas</strong><br />
+      <em>Konsultacijos dėl verslo plano, ES paramos</em><br />
+      El. paštas: tomas@efektyvusplanas.lt<br />
+      Mob. tel. nr.: +370 607 69498<br />
+    </p>
+    <p><strong>Gediminas Kašėta</strong><br />
+      <em>Finansų planavimas</em><br />
+      El. paštas: gediminas@efektyvusplanas.lt<br />
+      Mob. tel. nr.: +370 641 15668<br />
+    </p>
 
     <p>
       Susisiekite su mumis žemiau pateikta kontaktų forma.
@@ -48,7 +59,6 @@ import Notification from '~/components/Notification.vue'
 export default {
   data () {
     return {
-      title: 'Contacts | EP',
       name: '',
       email: '',
       phone: '',
@@ -91,9 +101,9 @@ export default {
   },
   head () {
     return {
-      title: this.title,
+      title: 'Kontaktai | EP',
       meta: [
-        { hid: 'description', name: 'description', content: 'My custom description' }
+        { hid: 'description', name: 'description', content: '' }
       ]
     }
   }

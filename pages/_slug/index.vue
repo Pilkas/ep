@@ -10,7 +10,7 @@ import axios from 'axios'
 export default {
   data () {
     return {
-      title: 'About Us | EP'
+
     }
   },
   async asyncData ({env, route, error}) {
@@ -30,9 +30,9 @@ export default {
   },
   head () {
     return {
-      title: this.title,
+      title: this.pageContent.title + ' | EP',
       meta: [
-        { hid: 'description', name: 'description', content: 'My custom description' }
+        { hid: 'description', name: 'description', content: this.pageContent.description }
       ]
     }
   }

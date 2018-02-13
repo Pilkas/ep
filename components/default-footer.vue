@@ -2,51 +2,39 @@
   <footer class="footer">
     <div class="container">
       <div class="columns menu">
-        <div class="column is-3 ">
+        <div class="column is-4 ">
           <ul class="menu-list">
             <li>
-              <a>Verslo plano rengimas</a>
+              <nuxt-link to="/verslo-plano-rengimas#procesas">Verslo plano rengimas</nuxt-link>
               <ul>
-                <li><a href="#">Procesas</a></li>
-                <li><a href="#">Kainos</a></li>
-                <li><a>Plano rengimo tikslai</a></li>
-                <li><a>Gero verslo plano savybės</a></li>
+                <li><nuxt-link to="/verslo-plano-rengimas#procesas">Procesas</nuxt-link></li>
+                <li><nuxt-link to="/verslo-plano-rengimas#kainos">Kainos</nuxt-link></li>
+                <li><nuxt-link to="/verslo-plano-rengimo-tikslai">Plano rengimo tikslai</nuxt-link></li>
+                <li><nuxt-link to="/gero-verslo-plano-savybes">Gero verslo plano savybės</nuxt-link></li>
               </ul>
             </li>
           </ul>
         </div>
-        <div class="column is-3">
+        <div class="column is-4">
           <ul class="menu-list">
             <li>
-              <a>Marketingo strategijos kūrimas</a>
+              <nuxt-link to="/projektu-rengimas-es-paramai-gauti">ES paramos projektų rengimas</nuxt-link>
               <ul>
-                <li><a href="#">Rinkos tyrimai</a></li>
-                <li><a href="#">Marketingo planavimas</a></li>
+                <li><nuxt-link to="/projektu-rengimas-es-paramai-gauti#etapai">Projekto paramai gauti rengimo etapai</nuxt-link></li>
+                <li><nuxt-link to="/projektu-rengimas-es-paramai-gauti#ypatybes">Projektų rengimo ypatybės</nuxt-link></li>
+                <li><nuxt-link to="/paramos-skyrimo-tvarka">Paramos skyrimo tvarka</nuxt-link></li>
               </ul>
             </li>
           </ul>
         </div>
-        <div class="column is-3">
+        <div class="column is-4">
           <ul class="menu-list">
             <li>
-              <a>ES paramos projektų rengimas</a>
+              <nuxt-link to="/finansavimo-galimybes-lietuvoje">Finansavimo galimybės Lietuvoje</nuxt-link>
               <ul>
-                <li><a href="#">Paramos skyrimo tvarka</a></li>
-                <li><a href="#">Projektų rengimo ypatybės</a></li>
-                <li><a href="#">Projekto paramai gauti rengimo etapai</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <div class="column is-3">
-          <ul class="menu-list">
-            <li>
-              <a>Verslo finansavimas Lietuvoje</a>
-              <ul>
-                <li><a href="#">Paskolos</a></li>
-                <li><a href="#">Invega garantijos</a></li>
-                <li><a href="#">Subsidijos verslui</a></li>
-                <li><a href="#">Subsidijos žemės ūkiui</a></li>
+                <li><nuxt-link to="/finansavimo-galimybes-lietuvoje#paskolos">Paskolos</nuxt-link></li>
+                <li><nuxt-link to="/finansavimo-galimybes-lietuvoje#paskolu-garantijos">Paskolų garantijos</nuxt-link></li>
+                <li><nuxt-link to="/finansavimo-galimybes-lietuvoje#parama">Subsidijos (parama)</nuxt-link></li>
               </ul>
             </li>
           </ul>
