@@ -1,25 +1,104 @@
 <template>
-  <div class="content">
-    <h1>Front page</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-</div>
+  <div class="tile is-ancestor">
+    <div class="tile is-vertical">
+      <div class="tile">
+        <div class="tile is-8 is-parent">
+          <nuxt-link class="tile is-child box projects-bg" to="/projektu-rengimas-es-paramai-gauti">
+            <p class="title">Projektų rengimas ES paramai gauti</p>
+            <!-- <p class="subtitle">Padedame pasinaudoti parama investiciniams projektams</p> -->
+            <div class="content is-medium">
+              <p>Padedame pasinaudoti parama investiciniams projektams</p>
+            </div>
+          </nuxt-link>
+        </div>
+        <div class="tile is-parent">
+          <nuxt-link class="tile is-child box wheat-bg" to="/projektu-rengimas-zemes-ukiui">
+            <p class="title">Projektų rengimas žemės ūkiui</p>
+            <!-- <p class="subtitle">Rengiame paraiškas NMA administruojamai paramai gauti</p> -->
+            <div class="content is-medium">
+              <p>Rengiame paraiškas NMA administruojamai paramai gauti</p>
+            </div>
+          </nuxt-link>
+        </div>
+      </div>
+      <div class="tile">
+        <div class="tile is-8 is-parent">
+          <nuxt-link class="tile is-child box plan-bg" to="/verslo-plano-rengimas">
+            <p class="title">Verslo plano rengimas</p>
+            <!-- <p class="subtitle">Rengiame verslo planus kredito įstaigoms, investuotojams</p> -->
+            <div class="content is-medium">
+              <p>Rengiame verslo planus kredito įstaigoms, investuotojams</p>
+            </div>
+          </nuxt-link>
+        </div>
+        <div class="tile is-parent">
+          <nuxt-link class="tile is-child box startup-bg" to="/verslo-planas-kredito-unijai">
+            <p class="title">Planas kredito unijai</p>
+            <!-- <p class="subtitle">Siūlome parengti verslo planą lengvatinei paskolai iš VSF gauti</p> -->
+            <div class="content is-medium">
+              <p>Siūlome parengti verslo planą lengvatinei paskolai iš VSF gauti</p>
+            </div>
+          </nuxt-link>
+        </div>
+      </div>
+      <div class="tile">
+        <div class="tile is-8 is-vertical">
+          <div class="tile">
+            <div class="tile is-parent">
+              <nuxt-link class="tile is-child box team-bg" to="/apie">
+                  <p class="title">Apie mus</p>
+                  <div class="content is-medium">
+                    <p>Esame daugiau nei 5 metų darbo patirtį turintys ekonomistai</p>
+                  </div>
+                </nuxt-link>
+            </div>
+            <div class="tile is-parent">
+              <nuxt-link class="tile is-child box contacts-bg" to="/kontaktai">
+                  <p class="title">Kontaktai</p>
+                  <!-- <p class="subtitle">Konsultuojame dėl finansavimo galimybių ir investicinių projektų rengimo</p> -->
+                  <div class="content is-medium">
+                    <p>Konsultuojame dėl finansavimo galimybių ir investicinių projektų rengimo</p>
+                  </div>
+                </nuxt-link>
+            </div>
+          </div>
+          <div class="tile is-parent">
+            <nuxt-link class="tile is-child box finance-bg" to="/finansavimo-galimybes-lietuvoje">
+                <p class="title">Finansavimo galimybės Lietuvoje</p>
+                <div class="content is-medium">
+                  <p>Informacija apie populiariausius materialinių investicinių finansavimo šaltinius šalyje</p>
+                  </div>
+                </nuxt-link>
+          </div>
+        </div>
+        <div class="tile is-parent">
+          <nuxt-link class="tile is-child box faq-bg" to="/duk">
+              <p class="title">Dažniausiai užduodami klausimai</p>
+              <div class="content is-medium">
+                <p>Taupydami jūsų laiką surinkome atsakymus į dažniausiai užduodamus klausimus apie teikiamas paslaugas, finansavimą ir kt.</p>
+              </div>
+            </nuxt-link>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
+  layout: 'front',
   data () {
     return {
-      title: 'Front Page | EP'
+      title: 'Investicijų planavimo paslaugos | EP'
     }
   },
   head () {
     return {
       title: this.title,
       meta: [
-        { hid: 'description', name: 'description', content: 'My custom description' }
-      ]
+        { hid: 'description', name: 'description', content: 'Rengiame projektus paramai gauti, taip pat verslo planus bankams ir investuotojams.' }
+      ],
+      htmlAttrs: { class: 'front' }
     }
   }
 }

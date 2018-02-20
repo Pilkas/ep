@@ -3,10 +3,10 @@
     <p class="menu-label">Paslaugos</p>
     <ul class="menu-list">
       <li>
-        <nuxt-link to="/verslo-plano-rengimas" active-class="is-active" @click="emitBle">Verslo plano rengimas</nuxt-link>
+        <nuxt-link to="/projektu-rengimas-es-paramai-gauti" active-class="is-active" @click="emitBle">ES paramos projektų rengimas</nuxt-link>
       </li>
       <li>
-        <nuxt-link to="/projektu-rengimas-es-paramai-gauti" active-class="is-active" @click="emitBle">ES paramos projektų rengimas</nuxt-link>
+        <nuxt-link to="/verslo-plano-rengimas" active-class="is-active" @click="emitBle">Verslo plano rengimas</nuxt-link>
       </li>
     </ul>
     <p class="menu-label">Apie mus</p>
