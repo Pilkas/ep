@@ -13,7 +13,7 @@ aside {
   /*background-color: #e0e0d1;*/
   /*background-color: #4e5d74;*/
   background-color: #4e7074;
-  background-image: url("../diagmonds.png");
+  background-image: url("../img/diagmonds.png");
   /*background-image: url("https://www.transparenttextures.com/patterns/shattered.png");*/
   color: white;
 }
@@ -46,7 +46,7 @@ aside .menu-list a:hover {
 }
 aside .menu-list a.is-active {
   background: none;
-  background: url(../menu-right.png) no-repeat left center;
+  background: url(../img/menu-right.png) no-repeat left center;
   padding-left: 24px;
   /*margin-left: -12px;*/
   /*color: #9e9885;*/
@@ -95,7 +95,7 @@ footer {
 }
 .front {
   background-color: #4e7074;
-  background-image: url("../diagmonds.png");
+  background-image: url("../img/diagmonds.png");
 }
 .front body {
   background-color: transparent;
@@ -127,31 +127,31 @@ footer {
   color: #fff;
 }
 .front .projects-bg {
-  background-image: url('../icons/analytics.svg');
+  background-image: url('../img/icons/analytics.svg');
 }
 .front .wheat-bg {
-	background-image: url('../icons/ear-of-wheat.svg');
+	background-image: url('../img/icons/ear-of-wheat.svg');
 	background-position: right -1rem center;
 }
 .front .plan-bg {
-  background-image: url('../icons/plan-idea.svg');
+  background-image: url('../img/icons/plan-idea.svg');
   background-position: right 1.5rem center;
 }
 .front .startup-bg {
-  background-image: url('../icons/startup.svg');
+  background-image: url('../img/icons/startup.svg');
 }
 .front .team-bg {
-  background-image: url('../icons/users.svg');
+  background-image: url('../img/icons/users.svg');
 }
 .front .contacts-bg {
-  background-image: url('../icons/mail.svg');
+  background-image: url('../img/icons/mail.svg');
   background-size: auto 75%;
 }
 .front .finance-bg {
-  background-image: url('../icons/directions.svg');
+  background-image: url('../img/icons/directions.svg');
 }
 .front .faq-bg {
-  background-image: url('../icons/info.svg');
+  background-image: url('../img/icons/info.svg');
   background-size: auto 66%;
   background-position: right 1.25rem bottom 1.25rem;
 }

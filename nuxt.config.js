@@ -4,9 +4,9 @@ module.exports = {
   /*
   ** Headers of the page
   */
-  router: {
-    base: '/a/'
-  },
+  // router: {
+  //   base: '/a/'
+  // },
   head: {
     title: 'ep',
     meta: [
@@ -15,10 +15,10 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'EP site' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/a/favicon.ico' },
-      { rel: 'stylesheet', href:'/a/css/bulma.min.css' },
-      { rel: 'stylesheet', href:'/a/css/font-awesome.min.css' },
-      { rel: 'stylesheet', href:'/a/css/custom.css' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href:'/css/bulma.min.css' },
+      { rel: 'stylesheet', href:'/css/font-awesome.min.css' },
+      { rel: 'stylesheet', href:'/css/custom.css' }
     ]
   },
   // css: [

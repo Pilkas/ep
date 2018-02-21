@@ -5,7 +5,7 @@
         <div class="columns">
           <aside class="column is-3">
             <div class="logo has-text-centered is-inline-block-touch">
-              <nuxt-link to="/" exact><img src="~/static/m-logo.png"></nuxt-link>
+              <nuxt-link to="/" exact><img src="/img/m-logo.png"></nuxt-link>
               <div class="slogan is-hidden-touch">Praktiškas verslo planavimas</div>
             </div>
 

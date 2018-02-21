@@ -3,7 +3,7 @@
     <section class="section">
       <div class="container">
         <div class="logo">
-          <img src="m-logo.png">
+          <img src="/img/m-logo.png">
         </div>
         <nuxt/>
       </div>
