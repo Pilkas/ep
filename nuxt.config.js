@@ -15,7 +15,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'EP site' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/img/favicon.ico' },
       { rel: 'stylesheet', href:'/css/bulma.min.css' },
       { rel: 'stylesheet', href:'/css/font-awesome.min.css' },
       { rel: 'stylesheet', href:'/css/custom.css' }
@@ -36,7 +36,7 @@ module.exports = {
     name: 'page',
     mode: 'out-in',
     beforeEnter (el) {
-      console.log('Before enter...');
+      // console.log('Before enter...');
     }
   },
   env: {

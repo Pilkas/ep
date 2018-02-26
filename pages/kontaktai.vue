@@ -1,27 +1,31 @@
 <template>
   <div class="content">
     <h1>Kontaktai</h1>
-
     <Notification :notification-data="notificationData"/>
-    <p>
-      <strong>Tomas Birkantas</strong><br />
-      <em>Konsultacijos dėl verslo plano, ES paramos</em><br />
-      El. paštas: tomas@efektyvusplanas.lt<br />
-      Mob. tel. nr.: +370 607 69498<br />
-    </p>
-    <p><strong>Gediminas Kašėta</strong><br />
-      <em>Finansų planavimas</em><br />
-      El. paštas: gediminas@efektyvusplanas.lt<br />
-      Mob. tel. nr.: +370 641 15668<br />
-    </p>
-
-    <p>
-      Susisiekite su mumis žemiau pateikta kontaktų forma.
-    </p>
-    <p>
-      Nors stengiamės atsakyti kaip įmanoma greičiau, atsakymas gali užtrukti, peržiūrėkite Dažniausiai užduodamų klausimų skiltį, gal ten rasite atsakymą į savo klausimą.
-    </p>
-    <form action="http://appetite.ahost.lt/a/cform/" method="post" v-on:submit.prevent="sendEmail">
+    <p>Nors stengiamės atsakyti kaip įmanoma greičiau, atsakymas gali užtrukti, peržiūrėkite Dažniausiai užduodamų klausimų skiltį, gal ten rasite atsakymą į savo klausimą.</p>
+    <div class="tile is-ancestor">
+      <div class="tile is-parent">
+        <div class="tile is-child">
+          <br>
+          <p class="has-text-centered"><img src="//www.appetite.ahost.lt/cockpitCMS/storage/uploads/2018/02/22/5a8eb69c46cf1tomas.png" width="275" height="275"></p>
+          <p><strong>Tomas Birkantas</strong><br><em>Konsultacijos dėl verslo plano, ES paramos</em><br>
+            El. paštas: tomas@efektyvusplanas.lt<br />
+            Mob. tel. nr.: +370 607 69498<br />
+          </p>
+        </div>
+      </div>
+      <div class="tile is-parent">
+        <div class="tile is-child">
+          <br>
+          <p class="has-text-centered"><img src="//www.appetite.ahost.lt/cockpitCMS/storage/uploads/2018/02/22/5a8eb69b6ecafgediminas.png" width="275" height="275"></p>
+          <p><strong>Gediminas Kašėta</strong><br><em>Finansų planavimas</em><br>
+            El. paštas: gediminas@efektyvusplanas.lt<br />
+            Mob. tel. nr.: +370 641 15668<br /></p>
+          </div>
+        </div>
+    </div>
+    <p>Susisiekite su mumis žemiau pateikta kontaktų forma.</p>
+    <form action="/" method="POST" v-on:submit.prevent="sendEmail" novalidate="novalidate">
       <label class="label">Kontaktiniai duomenys</label>
       <div class="field is-grouped is-grouped-multiline">
         <div class="control is-expanded">
@@ -45,14 +49,26 @@
           <button class="button is-link" type="submit">Siųsti užklausą</button>
         </div>
       </div>
+      <div class="field">
+        <div class="control">
+          <button class="button is-link" @click="testModal">Test Modal</button>
+        </div>
+      </div>
     </form>
+
+    <p>
+      Įmonės rekvizitai<br>
+      UAB "SVV Sprendimai"<br>
+      Įmonės kodas: 302 962 394<br>
+      Reg. adresas Germanto g. 18, Telšiai<br>
+      Bankas AB "DNB bankas"<br>
+      A/s Nr. LT754010042800668489<br>
+      Paslaugas teikiame visoje Lietuvoje<br>
+    </p>
   </div>
 </template>
 
 <script>
-// export default {
-//   layout: 'default'
-// }
 import axios from 'axios'
 import Notification from '~/components/Notification.vue'
 
@@ -72,7 +88,7 @@ export default {
   methods: {
     sendEmail (e) {
       let vm = this
-      axios.post('http://appetite.ahost.lt/a/cform/', {
+      axios.post('/cform/', {
         name: this.name,
         email: this.email,
         phone: this.phone,
@@ -86,6 +102,9 @@ export default {
           console.log(error)
         })
     },
+    testModal () {
+      this.notificationData.isActive = true
+    },
     clearForm () {
       this.name = ''
       this.email = ''
@@ -96,9 +115,6 @@ export default {
   components: {
     Notification
   },
-  mounted () {
-
-  },
   head () {
     return {
       title: 'Kontaktai | EP',
@@ -107,11 +123,7 @@ export default {
       ]
     }
   }
-  // layout: 'default'
 }
 </script>
-
-
 <style>
-
 </style>

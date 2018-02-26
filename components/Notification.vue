@@ -1,10 +1,12 @@
 <template>
-  <div class="notification is-primary" v-if="notificationData.isActive">
-    <button class="delete"   @click="notificationData.isActive=!notificationData.isActive"></button>
-    {{ notificationData.text }}
+  <div class="modal" :class="{'is-active': notificationData.isActive}">
+    <div class="modal-background" @click="notificationData.isActive=!notificationData.isActive"></div>
+    <div class="modal-content box">
+      {{ notificationData.text }}
+    </div>
+    <button class="modal-close is-large" aria-label="close" @click="notificationData.isActive=!notificationData.isActive"></button>
   </div>
 </template>
-
 <script>
 export default {
   props: {
@@ -14,13 +16,9 @@ export default {
     return {
 
     }
-  },
-  methods: {
-
   }
 }
 </script>
-
 <style>
 
 </style>

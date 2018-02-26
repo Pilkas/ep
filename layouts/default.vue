@@ -9,13 +9,13 @@
               <div class="slogan is-hidden-touch">Praktiškas verslo planavimas</div>
             </div>
 
-            <div class="navbar-burger burger is-pulled-right" v-on:click="toggleMenu">
+            <div class="navbar-burger burger is-pulled-right" v-on:click="isSideMenuHidden = !isSideMenuHidden">
               <span></span>
               <span></span>
               <span></span>
             </div>
             <hr class="is-hidden-touch">
-            <sidebarMenu v-bind:class="{ 'is-hidden-touch' : isSideMenuHidden }" v-on:click.native="toggleMenu"/>
+            <sidebarMenu v-bind:class="{ 'is-hidden-touch' : isSideMenuHidden }" v-on:click.native="isSideMenuHidden = !isSideMenuHidden"/>
           </aside>
           <main class="column is-9">
             <div class="columns is-centered">
@@ -38,11 +38,11 @@ import defaultFooter from '~/components/default-footer.vue'
 export default {
   data () {
     return {
-      isSideMenuHidden: false
+      isSideMenuHidden: true
     }
   },
   methods: {
-    toggleMenu: function () { this.isSideMenuHidden = !this.isSideMenuHidden }
+    // toggleMenu: function () { this.isSideMenuHidden = !this.isSideMenuHidden }
   },
   components: {
     sidebarMenu,

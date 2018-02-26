@@ -5,7 +5,6 @@
         <div class="tile is-8 is-parent">
           <nuxt-link class="tile is-child box projects-bg" to="/projektu-rengimas-es-paramai-gauti">
             <p class="title">Projektų rengimas ES paramai gauti</p>
-            <!-- <p class="subtitle">Padedame pasinaudoti parama investiciniams projektams</p> -->
             <div class="content is-medium">
               <p>Padedame pasinaudoti parama investiciniams projektams</p>
             </div>
@@ -14,7 +13,6 @@
         <div class="tile is-parent">
           <nuxt-link class="tile is-child box wheat-bg" to="/projektu-rengimas-zemes-ukiui">
             <p class="title">Projektų rengimas žemės ūkiui</p>
-            <!-- <p class="subtitle">Rengiame paraiškas NMA administruojamai paramai gauti</p> -->
             <div class="content is-medium">
               <p>Rengiame paraiškas NMA administruojamai paramai gauti</p>
             </div>
@@ -25,7 +23,6 @@
         <div class="tile is-8 is-parent">
           <nuxt-link class="tile is-child box plan-bg" to="/verslo-plano-rengimas">
             <p class="title">Verslo plano rengimas</p>
-            <!-- <p class="subtitle">Rengiame verslo planus kredito įstaigoms, investuotojams</p> -->
             <div class="content is-medium">
               <p>Rengiame verslo planus kredito įstaigoms, investuotojams</p>
             </div>
@@ -34,7 +31,6 @@
         <div class="tile is-parent">
           <nuxt-link class="tile is-child box startup-bg" to="/verslo-planas-kredito-unijai">
             <p class="title">Planas kredito unijai</p>
-            <!-- <p class="subtitle">Siūlome parengti verslo planą lengvatinei paskolai iš VSF gauti</p> -->
             <div class="content is-medium">
               <p>Siūlome parengti verslo planą lengvatinei paskolai iš VSF gauti</p>
             </div>
@@ -55,7 +51,6 @@
             <div class="tile is-parent">
               <nuxt-link class="tile is-child box contacts-bg" to="/kontaktai">
                   <p class="title">Kontaktai</p>
-                  <!-- <p class="subtitle">Konsultuojame dėl finansavimo galimybių ir investicinių projektų rengimo</p> -->
                   <div class="content is-medium">
                     <p>Konsultuojame dėl finansavimo galimybių ir investicinių projektų rengimo</p>
                   </div>
@@ -66,7 +61,7 @@
             <nuxt-link class="tile is-child box finance-bg" to="/finansavimo-galimybes-lietuvoje">
                 <p class="title">Finansavimo galimybės Lietuvoje</p>
                 <div class="content is-medium">
-                  <p>Informacija apie populiariausius materialinių investicinių finansavimo šaltinius šalyje</p>
+                  <p>Informacija apie populiariausius materialinių investicijų finansavimo šaltinius šalyje</p>
                   </div>
                 </nuxt-link>
           </div>
@@ -83,7 +78,6 @@
     </div>
   </div>
 </template>
-
 <script>
 export default {
   layout: 'front',
@@ -102,13 +96,7 @@ export default {
     }
   }
 }
-// export default {
-//   head: {
-//     title: 'Home'
-//   }
-// }
 </script>
-
 <style>
 
 </style>

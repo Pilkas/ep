@@ -36,7 +36,6 @@ export default {
       ]
     }
   }
-  // layout: 'default'
 }
 </script>
 
