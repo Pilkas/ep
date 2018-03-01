@@ -25,23 +25,25 @@
         </div>
     </div>
     <p>Susisiekite su mumis žemiau pateikta kontaktų forma.</p>
-    <form action="/" method="POST" v-on:submit.prevent="sendEmail" novalidate="novalidate">
+
+    <form action="/" method="POST" @submit="validateForm" novalidate>
+
       <label class="label">Kontaktiniai duomenys</label>
       <div class="field is-grouped is-grouped-multiline">
         <div class="control is-expanded">
-          <input class="input" type="text" v-model="name" name="name" placeholder="Vardas, pavardė" required>
+          <input class="input" type="text" v-model="name" name="name" placeholder="Vardas, pavardė*" required @blur="validateField">
         </div>
         <div class="control is-expanded">
-          <input class="input" type="email"  v-model="email" name="email" placeholder="El. paštas" required>
+          <input class="input" type="email" v-model="email" name="email" placeholder="El. paštas*" required @blur="validateField">
         </div>
         <div class="control is-expanded">
-          <input class="input" type="tel"  v-model="phone" name="phone" placeholder="Telefono numeris">
+          <input class="input" type="tel" v-model="phone" name="phone" placeholder="Telefono numeris">
         </div>
       </div>
       <div class="field">
         <label class="label">Užklausos tekstas</label>
         <div class="control">
-          <textarea class="textarea"  v-model="msg" name="message" placeholder="Trumpas veiklos pristatymas" required></textarea>
+          <textarea class="textarea" v-model="msg" name="message" placeholder="Trumpas veiklos pristatymas*" required  @blur="validateField"></textarea>
         </div>
       </div>
       <div class="field">
@@ -54,17 +56,8 @@
           <button class="button is-link" @click="testModal">Test Modal</button>
         </div>
       </div>
-    </form>
 
-    <p>
-      Įmonės rekvizitai<br>
-      UAB "SVV Sprendimai"<br>
-      Įmonės kodas: 302 962 394<br>
-      Reg. adresas Germanto g. 18, Telšiai<br>
-      Bankas AB "DNB bankas"<br>
-      A/s Nr. LT754010042800668489<br>
-      Paslaugas teikiame visoje Lietuvoje<br>
-    </p>
+    </form>
   </div>
 </template>
 
@@ -86,7 +79,7 @@ export default {
     }
   },
   methods: {
-    sendEmail (e) {
+    sendEmail () {
       let vm = this
       axios.post('/cform/', {
         name: this.name,
@@ -101,6 +94,23 @@ export default {
         .catch(function (error) {
           console.log(error)
         })
+    },
+    validateForm (e) {
+      e.preventDefault()
+      if (e.target.checkValidity()) {
+        this.sendEmail()
+      } else {
+        e.target.querySelectorAll('input, textarea').forEach((input) => {
+          if (!input.checkValidity()) {
+            input.classList.add('is-danger')
+          }
+        })
+      }
+    },
+    validateField (e) {
+      if (e.target.checkValidity()) {
+        e.target.classList.remove('is-danger')
+      }
     },
     testModal () {
       this.notificationData.isActive = true
