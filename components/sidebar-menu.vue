@@ -27,15 +27,13 @@
     </ul>
   </nav>
 </template>
-
 <script>
-export default {
-  methods: {
-    // emitBle: function () { this.$emit('ble') }
+  export default {
+    methods: {
+      // emitBle: function () { this.$emit('ble') }
+    }
   }
-}
 </script>
-
 <style>
 
 </style>

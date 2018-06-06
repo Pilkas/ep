@@ -32,8 +32,8 @@
 </template>
 
 <script>
-import sidebarMenu from '~/components/sidebar-menu.vue'
-import defaultFooter from '~/components/default-footer.vue'
+import sidebarMenu from '~/components/sidebar-menu'
+import defaultFooter from '~/components/default-footer'
 
 export default {
   data () {
@@ -42,7 +42,7 @@ export default {
     }
   },
   methods: {
-    // toggleMenu: function () { this.isSideMenuHidden = !this.isSideMenuHidden }
+
   },
   components: {
     sidebarMenu,

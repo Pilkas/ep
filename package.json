@@ -14,17 +14,24 @@
   },
   "dependencies": {
     "axios": "^0.17.1",
-    "nuxt": "^1.0.0-rc11"
+    "bulma": "^0.7.1",
+    "bulma-carousel": "^2.0.14",
+    "nuxt": "^1.4.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
-    "eslint": "^4.3.0",
+    "eslint": "^4.19.1",
     "eslint-config-standard": "^10.2.1",
     "eslint-loader": "^1.9.0",
     "eslint-plugin-html": "^3.1.1",
-    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-node": "^5.1.1",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.1"
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "node-sass": "^4.9.0",
+    "nuxt-sass-resources-loader": "^2.0.2",
+    "sass-loader": "^7.0.2",
+    "vue-loader": "^13.7.2",
+    "vue-style-loader": "^4.1.0"
   }
 }
