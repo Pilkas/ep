@@ -21,36 +21,6 @@
 
       }
     },
-    methods: {
-      //   handleFaqClicks () {
-      //     const kls = this.$el.querySelectorAll('.faq-question')
-      //     if (kls) {
-      //       for (let i = 0; i < kls.length; i++) {
-      //         kls[i].addEventListener('click', (e) => { this.toggleCardContent(e) })
-      //       }
-      //     }
-      //   },
-      //   toggleCardContent (e) {
-      //     const ats = e.currentTarget.nextElementSibling
-      //     const icon = e.currentTarget.children[1].querySelector('.icon')
-      //     if (icon.classList.contains('turn')) {
-      //       icon.classList.remove('turn')
-      //       console.log(ats.scrollHeight)
-      //     } else {
-      //       icon.classList.add('turn')
-      //       console.log(ats.scrollHeight)
-      //     }
-      //     if (ats.style.maxHeight) {
-      //       ats.style.maxHeight = null
-      //     } else {
-      //       ats.style.maxHeight = ats.scrollHeight + 'px'
-      //     }
-      //   }
-    },
-    mounted () {
-      // this.handleFaqClicks()
-      // bulmaCarousel.attach()
-    },
     async asyncData ({env, route, error}) {
       return axios.get(`${env.cockpit.apiUrl}/collections/get/page?token=${env.cockpit.apiToken}`)
         .then((response) => {

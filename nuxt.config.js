@@ -4,9 +4,6 @@ module.exports = {
   /*
   ** Headers of the page
   */
-  // router: {
-  //   base: '/a/'
-  // },
   head: {
     title: 'ep',
     meta: [
@@ -20,25 +17,13 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/img/favicon.ico' },
-      // { rel: 'stylesheet', href:'/css/bulma.min.css' },
-      // { rel: 'stylesheet', href:'/css/font-awesome.min.css' },
-      // { rel: 'stylesheet', href:'/css/custom.css' }
     ]
   },
   modules: [
-    // ['nuxt-sass-resources-loader', './assets/main.sass']
-    // ['nuxt-sass-resources-loader',  [resolve(__dirname, 'assets/main.scss')]]
-    'nuxt-sass-resources-loader'
-  ],
-  sassResources: [
-    '@/assets/main.sass'
+    ['nuxt-sass-resources-loader', '@/assets/main.scss']
   ],
   css: [
-    // { src: 'bulma/bulma.sass', lang: 'sass' },
-    // 'bulma-carousel',
-    // 'bulma'
-    // '@/static/css/custom.css'
-    // '@/assets/scss/main.scss'
+    '@/static/css/custom.css'
   ],
   /*
   ** Customize the progress bar color
