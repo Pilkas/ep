@@ -16,7 +16,7 @@
     "axios": "^0.17.1",
     "bulma": "^0.7.1",
     "bulma-carousel": "^2.0.14",
-    "nuxt": "^1.4.0"
+    "nuxt": "^1.4.1"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
@@ -30,7 +30,7 @@
     "eslint-plugin-standard": "^3.1.0",
     "node-sass": "^4.9.0",
     "nuxt-sass-resources-loader": "^2.0.2",
-    "sass-loader": "^7.0.2",
+    "sass-loader": "^7.0.3",
     "vue-loader": "^13.7.2",
     "vue-style-loader": "^4.1.0"
   }

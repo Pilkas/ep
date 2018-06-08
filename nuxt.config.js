@@ -19,10 +19,8 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/img/favicon.ico' },
     ]
   },
-  modules: [
-    ['nuxt-sass-resources-loader', '@/assets/main.scss']
-  ],
   css: [
+    '@/assets/main.scss',
     '@/static/css/custom.css'
   ],
   /*
@@ -72,13 +70,13 @@ module.exports = {
       }
     },
     vendor: [
-      'axios',
-      'bulma-carousel'
+      'axios'
     ],
     postcss: {
       plugins: {
         'postcss-custom-properties': false
       }
-    }
+    },
+    extractCSS: true,
   }
 }

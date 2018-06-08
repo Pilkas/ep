@@ -32,17 +32,14 @@
 </template>
 
 <script>
-import sidebarMenu from '~/components/sidebar-menu'
-import defaultFooter from '~/components/default-footer'
+import sidebarMenu from '~/components/SidebarMenu'
+import defaultFooter from '~/components/DefaultFooter'
 
 export default {
   data () {
     return {
       isSideMenuHidden: true
     }
-  },
-  methods: {
-
   },
   components: {
     sidebarMenu,

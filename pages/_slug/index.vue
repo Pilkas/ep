@@ -9,6 +9,7 @@
     <ContactForm v-if="$route.path === '/kontaktai'"/>
   </div>
 </template>
+
 <script>
   import axios from 'axios'
   import FAQ from '~/components/FAQ'
@@ -51,6 +52,7 @@
     }
   }
 </script>
+
 <style>
 
 </style>

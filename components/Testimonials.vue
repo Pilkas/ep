@@ -45,8 +45,6 @@
 <script>
   import bulmaCarousel from 'bulma-carousel/dist/bulma-carousel.min.js'
   export default {
-    methods: {
-    },
     mounted () {
       bulmaCarousel.attach()
     }
