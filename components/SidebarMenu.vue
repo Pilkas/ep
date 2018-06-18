@@ -27,11 +27,3 @@
     </ul>
   </nav>
 </template>
-
-<script>
-
-</script>
-
-<style>
-
-</style>

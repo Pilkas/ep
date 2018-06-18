@@ -7,7 +7,7 @@
             </div>
             <div class="card-header-icon">
               <span class="icon">
-                <i class="fas fa-angle-left"></i>
+                <i class="fa fa-angle-left"></i>
               </span>
             </div>
           </header>
@@ -28,7 +28,7 @@
           </div>
           <div class="card-header-icon">
             <span class="icon">
-              <i class="fas fa-angle-left"></i>
+              <i class="fa fa-angle-left"></i>
             </span>
           </div>
         </header>
@@ -49,7 +49,7 @@
           </div>
           <div class="card-header-icon">
             <span class="icon">
-              <i class="fas fa-angle-left"></i>
+              <i class="fa fa-angle-left"></i>
             </span>
           </div>
         </header>
@@ -67,7 +67,7 @@
           </div>
           <div class="card-header-icon">
             <span class="icon">
-              <i class="fas fa-angle-left"></i>
+              <i class="fa fa-angle-left"></i>
             </span>
           </div>
         </header>
@@ -85,7 +85,7 @@
           </div>
           <div class="card-header-icon">
             <span class="icon">
-              <i class="fas fa-angle-left"></i>
+              <i class="fa fa-angle-left"></i>
             </span>
           </div>
         </header>
@@ -102,7 +102,7 @@
           </div>
           <div class="card-header-icon">
             <span class="icon">
-              <i class="fas fa-angle-left"></i>
+              <i class="fa fa-angle-left"></i>
             </span>
           </div>
         </header>
@@ -119,7 +119,7 @@
           </div>
           <div class="card-header-icon">
             <span class="icon">
-              <i class="fas fa-angle-left"></i>
+              <i class="fa fa-angle-left"></i>
             </span>
           </div>
         </header>
@@ -136,7 +136,7 @@
           </div>
           <div class="card-header-icon">
             <span class="icon">
-              <i class="fas fa-angle-left"></i>
+              <i class="fa fa-angle-left"></i>
             </span>
           </div>
         </header>
@@ -153,7 +153,7 @@
           </div>
           <div class="card-header-icon">
             <span class="icon">
-              <i class="fas fa-angle-left"></i>
+              <i class="fa fa-angle-left"></i>
             </span>
           </div>
         </header>
@@ -170,7 +170,7 @@
           </div>
           <div class="card-header-icon">
             <span class="icon">
-              <i class="fas fa-angle-left"></i>
+              <i class="fa fa-angle-left"></i>
             </span>
           </div>
         </header>
@@ -198,10 +198,8 @@
         const icon = e.currentTarget.children[1].querySelector('.icon')
         if (icon.classList.contains('turn')) {
           icon.classList.remove('turn')
-          console.log(ats.scrollHeight)
         } else {
           icon.classList.add('turn')
-          console.log(ats.scrollHeight)
         }
         if (ats.style.maxHeight) {
           ats.style.maxHeight = null
@@ -215,6 +213,3 @@
     }
   }
 </script>
-<style>
-
-</style>

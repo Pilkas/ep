@@ -22,12 +22,7 @@
       </div>
       <div class="field">
         <div class="control">
-          <button class="button is-link" type="submit">Siųsti užklausą</button>
-        </div>
-      </div>
-      <div class="field">
-        <div class="control">
-          <button class="button is-link" @click="testModal">Test Modal</button>
+          <button class="button is-link" type="submit" @click="sendEmail">Siųsti užklausą</button>
         </div>
       </div>
     </form>
@@ -88,9 +83,6 @@
         this.email = ''
         this.phone = ''
         this.msg = ''
-      },
-      testModal () {
-        this.notificationData.isActive = true
       }
     },
     components: {
@@ -98,7 +90,3 @@
     }
   }
 </script>
-
-<style>
-
-</style>

@@ -32,7 +32,7 @@
         </blockquote>
       </div>
     </div>
-    <div class="carousel-navigation">
+    <div class="carousel-navigation is-overlay">
       <div class="carousel-nav-left">
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
       </div>
@@ -50,6 +50,3 @@
     }
   }
 </script>
-<style>
-
-</style>

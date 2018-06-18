@@ -1,5 +1,5 @@
 const axios = require('axios')
-
+const myKeys = require('./myKeys')
 module.exports = {
   /*
   ** Headers of the page
@@ -11,14 +11,15 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'EP site' }
     ],
-    script: [
-      { src: '/js/fa-solid.js' },
-      { src: '/js/fontawesome.min.js' },
-    ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/img/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: './img/favicon.ico' },
+      { rel: 'alternate', href: '', hreflang : 'lt' }
     ]
   },
+  modules: [
+    '@nuxtjs/font-awesome',
+    ['@nuxtjs/google-tag-manager', { id: myKeys.gtmID }]
+  ],
   css: [
     '@/assets/main.scss',
     '@/static/css/custom.css'
@@ -27,30 +28,27 @@ module.exports = {
   ** Customize the progress bar color
   */
   loading: {
-    color: 'blue',
-    height: '5px'
+    color: '#a63a50',
+    height: '3px'
   },
-  transition: {
-    name: 'page',
-    mode: 'out-in',
-    beforeEnter (el) {
-      // console.log('Before enter...');
-    }
-  },
+  // router: {
+  //   base: '/bandymas/'
+  // },
   env: {
     cockpit: {
       apiUrl: 'http://appetite.ahost.lt/cockpitCMS/api',
-      apiToken: '42a4ea47475e32209cff82187a050b',
+      apiToken: myKeys.cockpitToken,
       baseUrl: 'http://appetite.ahost.lt/cockpitCMS'
     }
   },
-  generate: {
+generate: {
     routes: function () {
-      return axios.get('http://appetite.ahost.lt/cockpitCMS/api/collections/get/page?token=42a4ea47475e32209cff82187a050b')
+      return axios.get('http://appetite.ahost.lt/cockpitCMS/api/collections/get/page?token=' + myKeys.cockpitToken)
       .then((res) => {
         return res.data.entries.map((page) => {return page.URL})
       })
-    }
+    },
+    fallback: true
   },
   /*
   ** Build configuration
@@ -77,6 +75,9 @@ module.exports = {
         'postcss-custom-properties': false
       }
     },
-    extractCSS: true,
+    // extractCSS: true
+    extractCSS: {
+      allChunks: true
+    }
   }
 }

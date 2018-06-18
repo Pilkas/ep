@@ -2,16 +2,22 @@ body {
   background-color: whitesmoke;
 }
 a {
-  color: #4e7074;
+  /* color: #4e7074; */
   color: #a63a50;
 }
+.button.is-link {
+  background-color: #4e5d74;
+}
+.button.is-link:hover {
+  background-color: #5f6d81;
+}
+
+
 aside {
-  /* background: url(bg.png);*/
-  /*ruda*/
-  /*background-color: #c0a868;*/
-  /*background-color: #e0995e;*/
-  /*background-color: #e0e0d1;*/
-  /*background-color: #4e5d74;*/
+  /* background-color: #c0a868;
+  background-color: #e0995e;
+  background-color: #e0e0d1;
+  background-color: #4e5d74; */
   background-color: #4e7074;
   background-image: url("../img/diagmonds.png");
   /*background-image: url("https://www.transparenttextures.com/patterns/shattered.png");*/
@@ -70,7 +76,14 @@ main .content{
   /*padding: 4rem 3rem;*/
   font-size: 1.125em;
 }
-main .meh{
+
+.content h1,
+.content h2,
+.content h3 {
+  font-weight: 400;
+}
+
+main .main-content-container{
   margin-top: 5rem;
   margin: 5rem 0 4rem;
 }
@@ -153,10 +166,11 @@ main .meh{
   background-position: right 1.25rem bottom 1.25rem;
 }
 
-.card-header {
+.faq-question {
+  background-color: whitesmoke;
   cursor: pointer;
 }
-.card-header-title {
+.faq-question .card-header-title {
   font-weight: 400;
 }
 .faq-answer-container {
@@ -175,3 +189,13 @@ main .meh{
   transform: rotate(-90deg);
   transition: transform 0.3s;
 }
+
+
+.carousel blockquote {
+  padding: 1.25em 3em;
+}
+
+
+.footer {
+  background-color: whitesmoke;
+} 

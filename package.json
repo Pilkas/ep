@@ -13,6 +13,8 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@nuxtjs/font-awesome": "^1.0.3",
+    "@nuxtjs/google-tag-manager": "^2.0.0",
     "axios": "^0.17.1",
     "bulma": "^0.7.1",
     "bulma-carousel": "^2.0.14",

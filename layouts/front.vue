@@ -3,7 +3,7 @@
     <section class="section">
       <div class="container">
         <div class="logo">
-          <img src="/img/m-logo.png">
+          <img src="img/m-logo.png">
         </div>
         <nuxt/>
       </div>
@@ -18,11 +18,3 @@
     </footer>
   </div>
 </template>
-
-<script>
-
-</script>
-
-<style>
-
-</style>

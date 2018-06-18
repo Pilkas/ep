@@ -19,7 +19,7 @@
           </aside>
           <main class="column is-9">
             <div class="columns is-centered">
-              <div class="column is-10 meh">
+              <div class="column is-10 main-content-container">
                 <nuxt/>
               </div>
             </div>
@@ -47,6 +47,3 @@ export default {
   }
 }
 </script>
-<style>
-
-</style>
