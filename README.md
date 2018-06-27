@@ -1,22 +1,7 @@
-# ep
+# EP website
 
-> EP site
+Objective of this project was to create a small representative mobile friendly website giving priority to SEO. 
+To achieve this objective I decided to use [Nuxt](https://nuxtjs.org/) as a static site generator and headless [Cockpit CMS](https://getcockpit.com/) to create custom API endpoint for content delivery via [Axios](https://github.com/axios/axios). [Bulma CSS](https://bulma.io/) framework allowed to create a decent responsive website design. 
 
-## Build Setup
+Live version: [http://efektyvusplanas.lt](http://efektyvusplanas.lt)
 
-``` bash
-# install dependencies
-$ npm install # Or yarn install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
