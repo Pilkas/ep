@@ -1,2 +1,245 @@
 @import "~bulma/bulma";
+
 @import "~bulma-carousel/dist/bulma-carousel";
+
+body {
+  background-color: whitesmoke;
+}
+
+a {
+  /* color: #4e7074; */
+  color: #a63a50;
+}
+
+.button.is-link {
+  background-color: #4e5d74;
+
+  &:hover {
+    background-color: #5f6d81;
+  }
+}
+
+aside {
+  /* background-color: #c0a868;
+  background-color: #e0995e;
+  background-color: #e0e0d1;
+  background-color: #4e5d74; */
+  background-color: #4e7074;
+  background-image: url("/img/diagmonds.png");
+
+  /*background-image: url("https://www.transparenttextures.com/patterns/shattered.png");*/
+  color: white;
+
+  .logo {
+    padding: 4rem 1rem 2rem;
+
+    .slogan {
+      padding-top: 0.25rem;
+      font-size: 0.875rem;
+      color: white;
+    }
+  }
+
+  hr {
+    margin: 0.5rem auto;
+    width: 75%;
+  }
+
+  .menu {
+    padding-top: 2rem;
+    padding-left: 0.875rem;
+  }
+
+  .menu-list a {
+    border-radius: 0;
+    color: #fff;
+    display: block;
+    padding: 0.5em 0.75em;
+
+    &:hover {
+      /*background-color: whitesmoke;*/
+      background: none;
+      color: #9e9885;
+    }
+
+    &.is-active {
+      background: none;
+      background: url(/img/menu-right.png) no-repeat left center;
+      padding-left: 24px;
+
+      /*margin-left: -12px;*/
+      /*color: #9e9885;*/
+      color: #fff;
+    }
+  }
+
+  .menu-label {
+    color: white;
+    padding-left: 0.25rem;
+  }
+}
+
+/*aside .menu-list a.is-active::before{
+content: url(menu-right.png);
+background: url(menu-right.png) no-repeat;
+height: 100%;
+width: 100%;
+}*/
+
+main {
+  background-color: white;
+
+  .content {
+    /*padding: 4rem 3rem;*/
+    font-size: 1.125em;
+  }
+}
+
+.content {
+  h1, h2, h3 {
+    font-weight: 400;
+  }
+}
+
+main .main-content-container {
+  margin-top: 5rem;
+  margin: 5rem 0 4rem;
+}
+
+@media screen and (max-width: 1023px) {
+  aside {
+    .logo {
+      padding: 0;
+      margin-top: 0.5rem;
+
+      img {
+        height: 3.25rem;
+      }
+    }
+
+    .burger {
+      margin-top: 0.5rem;
+    }
+  }
+
+  main .meh {
+    margin: 2rem 0;
+  }
+}
+
+.front {
+  background-color: #4e7074;
+  background-image: url("/img/diagmonds.png");
+
+  body {
+    background-color: transparent;
+  }
+
+  .logo {
+    color: #fff;
+    padding-bottom: 1.75rem;
+
+    img {
+      height: 80px;
+    }
+  }
+
+  .box {
+    border-radius: 0;
+    background-size: auto 80%;
+    background-repeat: no-repeat;
+    background-position: right 1.25rem center;
+    box-shadow: none;
+
+    &:hover {
+      background-color: #e0e0d1;
+      cursor: pointer;
+      box-shadow: none;
+    }
+  }
+
+  a {
+    outline: 0;
+  }
+
+  .footer {
+    background: none;
+    color: #fff;
+  }
+
+  .projects-bg {
+    background-image: url('/img/icons/analytics.svg');
+  }
+
+  .wheat-bg {
+    background-image: url('/img/icons/ear-of-wheat.svg');
+    background-position: right -1rem center;
+  }
+
+  .plan-bg {
+    background-image: url('/img/icons/plan-idea.svg');
+    background-position: right 1.5rem center;
+  }
+
+  .startup-bg {
+    background-image: url('/img/icons/startup.svg');
+  }
+
+  .team-bg {
+    background-image: url('/img/icons/users.svg');
+  }
+
+  .contacts-bg {
+    background-image: url('/img/icons/mail.svg');
+    background-size: auto 75%;
+  }
+
+  .finance-bg {
+    background-image: url('/img/icons/directions.svg');
+  }
+
+  .faq-bg {
+    background-image: url('/img/icons/info.svg');
+    background-size: auto 66%;
+    background-position: right 1.25rem bottom 1.25rem;
+  }
+}
+
+.faq-question {
+  background-color: whitesmoke;
+  cursor: pointer;
+
+  .card-header-title {
+    font-weight: 400;
+  }
+}
+
+.faq-answer-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s;
+}
+
+.faq-answer {
+  padding: 1.5rem;
+}
+
+.card-header-icon {
+  .icon {
+    transform: rotate(0deg);
+    transition: transform 0.3s;
+  }
+
+  .turn {
+    transform: rotate(-90deg);
+    transition: transform 0.3s;
+  }
+}
+
+.carousel blockquote {
+  padding: 1.25em 3em;
+}
+
+.footer {
+  background-color: whitesmoke;
+}

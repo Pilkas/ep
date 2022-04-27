@@ -5,12 +5,12 @@
         <div class="column is-4 ">
           <ul class="menu-list">
             <li>
-              <nuxt-link to="/verslo-plano-rengimas">Verslo plano rengimas</nuxt-link>
+              <NuxtLink to="/verslo-plano-rengimas">Verslo plano rengimas</NuxtLink>
               <ul>
                 <li><a :href= "url + '/verslo-plano-rengimas#procesas'">Procesas</a></li>
                 <li><a :href= "url + '/verslo-plano-rengimas#kainos'">Kainos</a></li>
-                <li><nuxt-link to="/verslo-plano-rengimo-tikslai">Plano rengimo tikslai</nuxt-link></li>
-                <li><nuxt-link to="/gero-verslo-plano-savybes">Gero verslo plano savybės</nuxt-link></li>
+                <li><NuxtLink to="/verslo-plano-rengimo-tikslai">Plano rengimo tikslai</NuxtLink></li>
+                <li><NuxtLink to="/gero-verslo-plano-savybes">Gero verslo plano savybės</NuxtLink></li>
               </ul>
             </li>
           </ul>
@@ -18,11 +18,11 @@
         <div class="column is-4">
           <ul class="menu-list">
             <li>
-              <nuxt-link to="/projektu-rengimas-es-paramai-gauti">ES paramos projektų rengimas</nuxt-link>
+              <NuxtLink to="/projektu-rengimas-es-paramai-gauti">ES paramos projektų rengimas</NuxtLink>
               <ul>
                 <li><a :href= "url + '/projektu-rengimas-es-paramai-gauti#etapai'">Projekto paramai gauti rengimo etapai</a></li>
                 <li><a :href= "url + '/projektu-rengimas-es-paramai-gauti#ypatybes'">Projektų rengimo ypatybės</a></li>
-                <li><nuxt-link to="/paramos-skyrimo-tvarka">Paramos skyrimo tvarka</nuxt-link></li>
+                <li><NuxtLink to="/paramos-skyrimo-tvarka">Paramos skyrimo tvarka</NuxtLink></li>
               </ul>
             </li>
           </ul>
@@ -30,7 +30,7 @@
         <div class="column is-4">
           <ul class="menu-list">
             <li>
-              <nuxt-link to="/finansavimo-galimybes-lietuvoje">Finansavimo galimybės Lietuvoje</nuxt-link>
+              <NuxtLink to="/finansavimo-galimybes-lietuvoje">Finansavimo galimybės Lietuvoje</NuxtLink>
               <ul>
                 <li><a :href= "url + '/finansavimo-galimybes-lietuvoje#paskolos'">Paskolos</a></li>
                 <li><a :href= "url + '/finansavimo-galimybes-lietuvoje#paskolu-garantijos'">Paskolų garantijos</a></li>

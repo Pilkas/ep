@@ -13,7 +13,6 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: './img/favicon.ico' },
-      { rel: 'alternate', href: '', hreflang : 'lt' }
     ]
   },
   modules: [
@@ -21,8 +20,7 @@ module.exports = {
     ['@nuxtjs/google-tag-manager', { id: myKeys.gtmID }]
   ],
   css: [
-    '@/assets/main.scss',
-    '@/static/css/custom.css'
+    '~/assets/main.scss',
   ],
   /*
   ** Customize the progress bar color
@@ -31,9 +29,20 @@ module.exports = {
     color: '#a63a50',
     height: '3px'
   },
-  // router: {
-  //   base: '/bandymas/'
-  // },
+  router: {
+    routes: [
+      {
+        name: 'index',
+        path: '/',
+        component: 'pages/index.vue'
+      },
+      {
+        name: 'slug',
+        path: '/:slug',
+        component: 'pages/_slug/index.vue'
+      }
+    ]
+  },
   env: {
     cockpit: {
       apiUrl: 'http://appetite.ahost.lt/cockpitCMS/api',
@@ -41,12 +50,12 @@ module.exports = {
       baseUrl: 'http://appetite.ahost.lt/cockpitCMS'
     }
   },
-generate: {
+  generate: {
     routes: function () {
       return axios.get('http://appetite.ahost.lt/cockpitCMS/api/collections/get/page?token=' + myKeys.cockpitToken)
-      .then((res) => {
-        return res.data.entries.map((page) => {return page.URL})
-      })
+        .then((res) => {
+          return res.data.entries.map((page) => { return page.URL })
+        })
     },
     fallback: true
   },
@@ -54,30 +63,12 @@ generate: {
   ** Build configuration
   */
   build: {
-    /*
-    ** Run ESLint on save
-    */
-    extend (config, { isDev, isClient }) {
-      if (isDev && isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
-      }
-    },
-    vendor: [
-      'axios'
-    ],
     postcss: {
       plugins: {
         'postcss-custom-properties': false
       }
     },
-    // extractCSS: true
-    extractCSS: {
-      allChunks: true
-    }
-  }
+  },
+  components: true,
+  target: 'static'
 }

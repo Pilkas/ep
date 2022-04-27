@@ -13,12 +13,12 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "@nuxtjs/font-awesome": "^1.0.3",
-    "@nuxtjs/google-tag-manager": "^2.0.0",
-    "axios": "^0.17.1",
-    "bulma": "^0.7.1",
-    "bulma-carousel": "^2.0.14",
-    "nuxt": "^1.4.1"
+    "@nuxtjs/font-awesome": "^1.0.4",
+    "@nuxtjs/google-tag-manager": "^2.3.2",
+    "axios": "0.27.2",
+    "bulma": "0.9.3",
+    "bulma-carousel": "2.0.14",
+    "nuxt": "2.15.8"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
@@ -26,14 +26,11 @@
     "eslint-config-standard": "^10.2.1",
     "eslint-loader": "^1.9.0",
     "eslint-plugin-html": "^3.1.1",
-    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-standard": "^3.1.0",
-    "node-sass": "^4.9.0",
-    "nuxt-sass-resources-loader": "^2.0.2",
-    "sass-loader": "^7.0.3",
-    "vue-loader": "^13.7.2",
-    "vue-style-loader": "^4.1.0"
+    "sass": "1.51.0",
+    "sass-loader": "10.1.1"
   }
 }
